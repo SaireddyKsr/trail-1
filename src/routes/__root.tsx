@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -34,7 +35,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -77,12 +78,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Anjali & Madhan — Wedding Invitation" },
-      { name: "description", content: "The wedding invitation of Anjali and Madhan at Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam." },
-      { property: "og:title", content: "Anjali & Madhan — Wedding Invitation" },
-      { property: "og:description", content: "Join Anjali and Madhan for their wedding celebration." },
+      { title: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
+      { name: "description", content: "The wedding invitation of Nanubala Kunadruthi and Surya Teja at Sri Sai Baba Kalyana Mandapam, Bethamcherla." },
+      { property: "og:title", content: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
+      { property: "og:description", content: "Join Nanubala Kunadruthi and Surya Teja for their wedding celebration." },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Anjali & Madhan Wedding" },
+      { property: "og:site_name", content: "Nanubala Kunadruthi & Surya Teja Wedding" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

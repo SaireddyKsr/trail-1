@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarDays, Clock3, Instagram, MapPin, Music, Share2, VolumeX, Youtube } from "lucide-react";
+import { CalendarDays, Clock3, MapPin, Music, Share2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -21,7 +21,7 @@ const templeSceneryUrl = `${ASSETS}/temple-scenery.png`;
 const countdownWallUrl = `${ASSETS}/countdown-wall.webp`;
 const musicUrl = "/Kalyanam_Vibhogam.mp3";
 
-const WEDDING_DATE = new Date("2026-10-16T08:15:00+05:30");
+const WEDDING_DATE = new Date("2026-11-26T09:31:00+05:30");
 
 const pad2 = (value: number) => String(value).padStart(2, "0");
 
@@ -47,15 +47,15 @@ function useCountdown() {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Anjali & Madhan — Wedding Invitation" },
+      { title: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
       {
         name: "description",
-        content: "The wedding invitation of Anjali and Madhan at Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam.",
+        content: "The wedding invitation of Nanubala Kunadruthi and Surya Teja at Sri Sai Baba Kalyana Mandapam, Bethamcherla, Nandyal District.",
       },
-      { property: "og:title", content: "Anjali & Madhan — Wedding Invitation" },
+      { property: "og:title", content: "Nanubala Kunadruthi & Surya Teja — Wedding Invitation" },
       {
         property: "og:description",
-        content: "Join Anjali and Madhan for their wedding celebration.",
+        content: "Join Nanubala Kunadruthi and Surya Teja for their wedding celebration on 26 November 2026.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -102,37 +102,8 @@ function BrandingSection() {
     >
       <div className="branding-card">
         <div className="branding-ornament" aria-hidden="true"><i /><span>◆</span><i /></div>
-        <p className="branding-label branding-reveal">Captured by</p>
-        <h2 id="branding-title" className="branding-name branding-reveal">Passion Photography</h2>
-        <a className="branding-phone branding-reveal" href="tel:+919959990503">+91 99599 90503</a>
-        <a
-          className="branding-email branding-reveal"
-          href="mailto:Passionphotography7878@gmail.com"
-        >
-          Passionphotography7878@gmail.com
-        </a>
-
-        <div className="branding-social branding-reveal">
-          <a
-            className="branding-social-link"
-            href="https://www.instagram.com/passionphotography_in_kurnool"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Passion Photography on Instagram"
-          >
-            <Instagram aria-hidden="true" /> <span>Instagram</span>
-          </a>
-          <span className="branding-social-divider" aria-hidden="true" />
-          <a
-            className="branding-social-link"
-            href="https://www.youtube.com/@PassionPhotographyy"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Passion Photography on YouTube"
-          >
-            <Youtube aria-hidden="true" /> <span>YouTube</span>
-          </a>
-        </div>
+        <p className="branding-label branding-reveal">With best compliments from</p>
+        <h2 id="branding-title" className="branding-name branding-reveal">Near & Dear</h2>
       </div>
     </section>
   );
@@ -223,14 +194,14 @@ function WeddingHero() {
         <div className="hero-scrim" />
 
         <div className="hero-content">
-          <p className="hero-invocation">|| Shree Ganeshay Namah ||</p>
-          <h1 className="hero-name">{splitName("Anjali")}</h1>
+          <p className="hero-invocation">|| Srirasthu Shubhamasthu ||</p>
+          <h1 className="hero-name">{splitName("Kunadruthi")}</h1>
           <p className="hero-ampersand">&</p>
-          <p className="hero-name">{splitName("Madhan")}</p>
-          <p className="hero-date">Friday, October 16, 2026</p>
+          <p className="hero-name">{splitName("Surya Teja")}</p>
+          <p className="hero-date">Thursday, November 26, 2026</p>
           <p className="hero-venue">
             <span className="hero-at">at</span>{" "}
-            <span className="hero-location">Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam</span>
+            <span className="hero-location">Sri Sai Baba Kalyana Mandapam, Bethamcherla</span>
           </p>
         </div>
       </section>
@@ -261,9 +232,10 @@ function WeddingHero() {
           <div className="couple-details">
             <article className="couple-person couple-person--groom couple-reveal">
               <p className="couple-role">The Groom</p>
-              <h3>Anjali</h3>
-              <span className="couple-relation">Daughter of</span>
-              <p className="couple-parents">Smt. Swetha <span>&</span> Sri. Venkatesh</p>
+              <h3>Surya Teja</h3>
+              <p className="couple-profession">Software Engineer</p>
+              <span className="couple-relation">Son of</span>
+              <p className="couple-parents">Smt. Gadugu Rajani Kumari <span>&</span> Late Sri. Gadugu Nagendra Prasad</p>
             </article>
 
             <div className="couple-union couple-reveal" aria-hidden="true">
@@ -274,9 +246,10 @@ function WeddingHero() {
 
             <article className="couple-person couple-person--bride couple-reveal">
               <p className="couple-role">The Bride</p>
-              <h3>Madhan</h3>
-              <span className="couple-relation">Son of</span>
-              <p className="couple-parents">Smt. Revathi <span>&</span> Late Sri. Siva Kumar</p>
+              <h3>Kunadruthi</h3>
+              <p className="couple-profession">Software Engineer</p>
+              <span className="couple-relation">Daughter of</span>
+              <p className="couple-parents">Smt. Nanubala Leela Vathi <span>&</span> Sri. Nanubala Guru Sekhar</p>
             </article>
           </div>
 
@@ -313,15 +286,15 @@ function WeddingHero() {
               <div className="cover-group">
                 <p className="cover-label">The Wedding Of</p>
                 <p className="cover-names">
-                  <span>Anjali</span>
+                  <span>Kunadruthi</span>
                   <span className="cover-amp"><i>&</i></span>
-                  <span>Madhan</span>
+                  <span>Surya Teja</span>
                 </p>
               </div>
 
               <div className="cover-group cover-meta">
-                <p className="cover-date">16 October 2026</p>
-                <p className="cover-city">Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam</p>
+                <p className="cover-date">26 November 2026</p>
+                <p className="cover-city">Sri Sai Baba Kalyana Mandapam, Bethamcherla</p>
               </div>
 
               <button className="cover-cta" type="button" onClick={openInvitation}>
@@ -400,12 +373,12 @@ function AuspiciousHourSection() {
           <span className="muhurtham-marker" aria-hidden="true"><i /></span>
           <article className="muhurtham-card">
             <span className="muhurtham-ribbon">Muhurtham</span>
-            <h3>Sumuhurtham (Muhurtham)</h3>
+            <h3>Sumuhurtham — Dhanur Lagnam</h3>
             <p className="muhurtham-description">The sacred vows, followed by a traditional lunch.</p>
             <div className="muhurtham-meta">
-              <p><CalendarDays aria-hidden="true" /> Friday, 16th October 2026</p>
-              <p><Clock3 aria-hidden="true" /> 8:15 AM</p>
-              <p><MapPin aria-hidden="true" /> Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam</p>
+              <p><CalendarDays aria-hidden="true" /> Thursday, 26th November 2026</p>
+              <p><Clock3 aria-hidden="true" /> 9:31 AM</p>
+              <p><MapPin aria-hidden="true" /> Sri Sai Baba Kalyana Mandapam, Bethamcherla, Nandyal District</p>
             </div>
           </article>
         </div>
@@ -418,8 +391,8 @@ function VenueSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [copied, setCopied] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-  const venueName = "Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam";
-  const mapsUrl = "https://share.google/C6RIgWGdDaKzAEPlq";
+  const venueName = "Sri Sai Baba Kalyana Mandapam, Bethamcherla";
+  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=Sri%20Sai%20Baba%20Kalyana%20Mandapam%2C%20Bethamcherla%2C%20Nandyal";
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -467,8 +440,8 @@ function VenueSection() {
 
         <div className="venue-map ceremonial-reveal">
           <iframe
-            title="Map showing Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam"
-            src="https://www.google.com/maps?q=Sri%20Lakshmi%20Venkateshwara%20Swamy%20Kalyana%20Mandapam&output=embed"
+            title="Map showing Sri Sai Baba Kalyana Mandapam, Bethamcherla"
+            src="https://www.google.com/maps?q=Sri%20Sai%20Baba%20Kalyana%20Mandapam%2C%20Bethamcherla&output=embed"
             width="100%"
             height="320"
             loading="lazy"
@@ -515,15 +488,21 @@ function InvitationFooter() {
         <img className="footer-art" src={footerCard} alt="Traditional wedding ceremony at a South Indian temple" loading="lazy" />
 
         <div className="footer-greeting">
-          <p className="footer-lead footer-reveal">We await your gracious presence</p>
-          <p className="footer-blessings footer-reveal">and your blessings</p>
+          <p className="footer-lead footer-reveal">We solicit your gracious presence</p>
+          <p className="footer-blessings footer-reveal">with family and friends</p>
           <p className="footer-telugu footer-reveal">శుభమస్తు</p>
 
-          <div className="footer-hosts footer-reveal" aria-label="Invited by Smt. Pathange Swetha and Sri. Pathange Venkatesh">
-            <span className="footer-hosts-label">Invited by</span>
-            <span className="footer-hosts-name">Smt. Pathange Swetha</span>
+          <div className="footer-hosts footer-reveal" aria-label="Cordially invited by Smt. Nanubala Leela Vathi and Sri. Nanubala Guru Sekhar">
+            <span className="footer-hosts-label">Cordially invited by</span>
+            <span className="footer-hosts-name">Smt. Nanubala Leela Vathi</span>
             <span className="footer-hosts-join">and</span>
-            <span className="footer-hosts-name">Sri. Pathange Venkatesh</span>
+            <span className="footer-hosts-name">Sri. Nanubala Guru Sekhar</span>
+            <span className="footer-hosts-place">Bethamcherla Vill & Mdl, Nandyal Dist.</span>
+            <span className="footer-hosts-phones">
+              <a href="tel:+919440769128">94407 69128</a>
+              <a href="tel:+919441621649">94416 21649</a>
+              <a href="tel:+919491858446">94918 58446</a>
+            </span>
           </div>
         </div>
       </div>
