@@ -286,15 +286,15 @@ function WeddingHero() {
               <div className="cover-group">
                 <p className="cover-label">The Wedding Of</p>
                 <p className="cover-names">
-                  <span>Anjali</span>
+                  <span>Kunadruthi</span>
                   <span className="cover-amp"><i>&</i></span>
-                  <span>Madhan</span>
+                  <span>Surya Teja</span>
                 </p>
               </div>
 
               <div className="cover-group cover-meta">
-                <p className="cover-date">16 October 2026</p>
-                <p className="cover-city">Sri Lakshmi Venkateshwara Swamy Kalyana Mandapam</p>
+                <p className="cover-date">26 November 2026</p>
+                <p className="cover-city">Sri Sai Baba Kalyana Mandapam, Bethamcherla</p>
               </div>
 
               <button className="cover-cta" type="button" onClick={openInvitation}>
