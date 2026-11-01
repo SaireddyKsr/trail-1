@@ -454,9 +454,6 @@ button, input, textarea, select { font: inherit; }
 .footer-hosts-name { font: 400 clamp(1rem, 2.65cqw, 2.1rem)/1.15 "Great Vibes", cursive; color: var(--maroon-deep); }
 .footer-hosts-join { font: italic 400 clamp(.62rem, 1.55cqw, 1.2rem)/1.5 "Cormorant Garamond", serif; color: var(--gold); }
 .footer-hosts-place { font: italic 400 clamp(.6rem, 1.5cqw, 1.15rem)/1.5 "Cormorant Garamond", serif; color: var(--ink); }
-.footer-hosts-phones { display: flex; gap: 1em; flex-wrap: wrap; justify-content: center; font: 400 clamp(.6rem, 1.5cqw, 1.1rem)/1.6 Marcellus, serif; letter-spacing: .08em; color: var(--ink); }
-.footer-hosts-phones a { color: inherit; text-decoration: none; transition: color .2s ease; }
-.footer-hosts-phones a:hover { color: var(--maroon); }
 .footer-compliments { margin-top: .55em !important; display: inline-flex; flex-direction: column; align-items: center; gap: .1em; }
 .footer-compliments-label { font: 400 clamp(.5rem, 1.25cqw, .95rem)/1.5 Marcellus, serif; letter-spacing: .38em; text-indent: .38em; text-transform: uppercase; color: var(--temple-green); }
 .footer-compliments-name { font: 400 clamp(1.1rem, 3cqw, 2.3rem)/1.1 "Great Vibes", cursive; color: var(--maroon-deep); }
