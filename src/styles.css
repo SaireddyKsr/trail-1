@@ -410,11 +410,16 @@ button, input, textarea, select { font: inherit; }
 .venue-button--outline:hover { background: var(--maroon); color: var(--primary-foreground); }
 .venue-button--solid { background: var(--maroon); color: var(--primary-foreground); box-shadow: none; }
 .venue-button--solid:hover { background: var(--maroon-deep); }
+.venue-contacts { margin-top: .55rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .55rem; animation-delay: .38s !important; }
+.venue-contact { display: inline-flex; align-items: center; gap: .5rem; height: 2.35rem; padding-inline: 1rem; border: 1px solid color-mix(in oklch, var(--gold) 55%, transparent); border-radius: 999px; color: var(--maroon-deep); font: 400 .62rem/1 Marcellus, serif; letter-spacing: .14em; text-decoration: none; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.venue-contact svg { width: .78rem; height: .78rem; color: var(--gold); stroke-width: 1.8; }
+.venue-contact:hover { background: var(--maroon); border-color: var(--maroon); color: var(--primary-foreground); }
+.venue-contact:hover svg { color: var(--primary-foreground); }
 
 .invitation-footer { width: 100%; overflow: hidden; background: var(--parchment); }
 .footer-card { position: relative; width: 100%; aspect-ratio: 951 / 1576; container-type: inline-size; }
 .footer-art { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
-.footer-greeting { position: absolute; z-index: 1; top: 12%; left: 50%; width: 66%; text-align: center; transform: translateX(-50%); color: var(--maroon); }
+.footer-greeting { position: absolute; z-index: 1; top: 10.5%; left: 50%; width: 66%; text-align: center; transform: translateX(-50%); color: var(--maroon); }
 .footer-greeting p { margin: 0; }
 .footer-lead { font: 400 clamp(.72rem, 2.05cqw, 1.65rem)/1.5 "Cormorant Garamond", serif; color: var(--ink); }
 .footer-blessings { margin-top: .18em !important; font: 400 clamp(1.3rem, 3.7cqw, 3rem)/1.25 "Great Vibes", cursive; }
