@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarDays, Clock3, MapPin, Music, Share2, VolumeX } from "lucide-react";
+import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -102,8 +102,19 @@ function BrandingSection() {
     >
       <div className="branding-card">
         <div className="branding-ornament" aria-hidden="true"><i /><span>◆</span><i /></div>
-        <p className="branding-label branding-reveal">With best compliments from</p>
-        <h2 id="branding-title" className="branding-name branding-reveal">Near & Dear</h2>
+        <p className="branding-label branding-reveal">Wedding Photography</p>
+        <h2 id="branding-title" className="branding-name branding-reveal">Passion Photography</h2>
+        <a className="branding-phone branding-reveal" href="tel:+919959990503">+91 99599 90503</a>
+        <a className="branding-email branding-reveal" href="mailto:Passionphotography7878@gmail.com">Passionphotography7878@gmail.com</a>
+        <div className="branding-social branding-reveal">
+          <a className="branding-social-link" href="https://www.instagram.com/passionphotography_in_kurnool" target="_blank" rel="noreferrer">
+            <Instagram aria-hidden="true" /> Instagram
+          </a>
+          <span className="branding-social-divider" aria-hidden="true" />
+          <a className="branding-social-link" href="https://www.youtube.com/@PassionPhotographyy" target="_blank" rel="noreferrer">
+            <Youtube aria-hidden="true" /> YouTube
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -457,6 +468,12 @@ function VenueSection() {
             <Share2 aria-hidden="true" /> {copied ? "Location copied" : "Share location"}
           </Button>
         </div>
+
+        <div className="venue-contacts ceremonial-reveal" aria-label="Call the wedding hosts">
+          <a className="venue-contact" href="tel:+919440769128"><Phone aria-hidden="true" /> 94407 69128</a>
+          <a className="venue-contact" href="tel:+919441621649"><Phone aria-hidden="true" /> 94416 21649</a>
+          <a className="venue-contact" href="tel:+919491858446"><Phone aria-hidden="true" /> 94918 58446</a>
+        </div>
       </div>
     </section>
   );
@@ -503,6 +520,11 @@ function InvitationFooter() {
               <a href="tel:+919441621649">94416 21649</a>
               <a href="tel:+919491858446">94918 58446</a>
             </span>
+          </div>
+
+          <div className="footer-compliments footer-reveal" aria-hidden="true">
+            <span className="footer-compliments-label">With best compliments from</span>
+            <span className="footer-compliments-name">Near &amp; Dear</span>
           </div>
         </div>
       </div>
