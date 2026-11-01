@@ -104,8 +104,12 @@ function BrandingSection() {
         <div className="branding-ornament" aria-hidden="true"><i /><span>◆</span><i /></div>
         <p className="branding-label branding-reveal">Wedding Photography</p>
         <h2 id="branding-title" className="branding-name branding-reveal">Passion Photography</h2>
-        <a className="branding-phone branding-reveal" href="tel:+919959990503">+91 99599 90503</a>
         <a className="branding-email branding-reveal" href="mailto:Passionphotography7878@gmail.com">Passionphotography7878@gmail.com</a>
+        <div className="branding-social branding-reveal">
+          <a className="branding-social-link" href="tel:+919959990503">
+            <Phone aria-hidden="true" /> 99599 90503
+          </a>
+        </div>
         <div className="branding-social branding-reveal">
           <a className="branding-social-link" href="https://www.instagram.com/passionphotography_in_kurnool" target="_blank" rel="noreferrer">
             <Instagram aria-hidden="true" /> Instagram
