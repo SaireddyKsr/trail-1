@@ -515,11 +515,6 @@ function InvitationFooter() {
             <span className="footer-hosts-join">and</span>
             <span className="footer-hosts-name">Sri. Nanubala Guru Sekhar</span>
             <span className="footer-hosts-place">Bethamcherla Vill & Mdl, Nandyal Dist.</span>
-            <span className="footer-hosts-phones">
-              <a href="tel:+919440769128">94407 69128</a>
-              <a href="tel:+919441621649">94416 21649</a>
-              <a href="tel:+919491858446">94918 58446</a>
-            </span>
           </div>
 
           <div className="footer-compliments footer-reveal" aria-hidden="true">
