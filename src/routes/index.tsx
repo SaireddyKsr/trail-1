@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { CalendarDays, Clock3, MapPin, Music, Share2, VolumeX } from "lucide-react";
+import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -456,6 +456,12 @@ function VenueSection() {
           <Button className="venue-button venue-button--solid" onClick={shareLocation}>
             <Share2 aria-hidden="true" /> {copied ? "Location copied" : "Share location"}
           </Button>
+        </div>
+
+        <div className="venue-contacts ceremonial-reveal" aria-label="Call the wedding hosts">
+          <a className="venue-contact" href="tel:+919440769128"><Phone aria-hidden="true" /> 94407 69128</a>
+          <a className="venue-contact" href="tel:+919441621649"><Phone aria-hidden="true" /> 94416 21649</a>
+          <a className="venue-contact" href="tel:+919491858446"><Phone aria-hidden="true" /> 94918 58446</a>
         </div>
       </div>
     </section>
