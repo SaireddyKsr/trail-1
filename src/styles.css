@@ -334,13 +334,13 @@ button, input, textarea, select { font: inherit; }
 
 .countdown-cells {
   position: absolute;
-  top: 36%;
-  left: 11.5%;
-  right: 11.5%;
-  height: 44%;
+  top: 42%;
+  left: 16.5%;
+  right: 16.6%;
+  height: 35.7%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.5%;
+  gap: 11.7%;
 }
 
 .countdown-cell {
@@ -601,7 +601,7 @@ button, input, textarea, select { font: inherit; }
 @keyframes branding-rise { to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 680px) {
-  .countdown-cells { top: 37%; left: 12.5%; right: 12.5%; height: 42%; gap: 3%; }
+  .countdown-cells { top: 42%; left: 16.5%; right: 16.6%; height: 35.7%; gap: 11.7%; }
   .countdown-value { font-size: clamp(.9rem, 5.2cqw, 2rem); }
   .muhurtham-section { min-height: 52rem; padding: 6.5rem 1.25rem 18rem; }
   .muhurtham-content { padding-left: 0; }
