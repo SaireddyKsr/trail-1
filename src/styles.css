@@ -200,7 +200,7 @@ button, input, textarea, select { font: inherit; }
 .couple-profession { margin: -0.75rem 0 1.4rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--ink); letter-spacing: .24em; text-indent: .24em; text-transform: uppercase; opacity: .8; }
 .couple-relation { display: block; margin-bottom: .65rem; font: 400 .63rem/1.5 Marcellus, serif; color: var(--temple-green); letter-spacing: .3em; text-transform: uppercase; }
 .couple-parents { max-width: 22rem; margin: 0 auto; font: 400 clamp(.95rem, 2vw, 1.12rem)/1.75 "Cormorant Garamond", serif; color: var(--ink); }
-.couple-parents span { color: var(--maroon); font-style: italic; }
+.couple-parents span { display: block; color: var(--maroon); font-style: italic; }
 
 .couple-union { height: 11rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; }
 .couple-union-line { width: 1px; height: 3.25rem; background: linear-gradient(transparent, var(--gold)); }
