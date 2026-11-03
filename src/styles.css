@@ -208,7 +208,7 @@ button, input, textarea, select { font: inherit; }
   background: linear-gradient(160deg, color-mix(in srgb, var(--parchment) 82%, white), var(--parchment));
   box-shadow: 0 1.2rem 2.4rem rgba(43, 26, 14, .18), 0 0 0 5px color-mix(in srgb, var(--gold) 28%, transparent);
 }
-.couple-portrait--groom { object-position: center 30%; }
+.couple-portrait--groom { object-position: center; }
 .couple-role { margin: 0 0 .75rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--gold); letter-spacing: .28em; text-transform: uppercase; }
 .couple-person h3 { margin: 0 0 1.5rem; font: 400 clamp(2rem, 5vw, 3.35rem)/1.1 "Great Vibes", cursive; color: var(--maroon); letter-spacing: 0; }
 .couple-profession { margin: -0.75rem 0 1.4rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--ink); letter-spacing: .24em; text-indent: .24em; text-transform: uppercase; opacity: .8; }

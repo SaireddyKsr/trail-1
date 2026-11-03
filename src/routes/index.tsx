@@ -3,7 +3,7 @@ import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX,
 import { useEffect, useRef, useState } from "react";
 
 import bridePortraitAsset from "@/assets/bride-portrait.webp.asset.json";
-import groomPortraitAsset from "@/assets/groom-portrait.webp.asset.json";
+import groomPortraitAsset from "@/assets/groom-portrait-cropped.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 const ASSETS = "/assets";
