@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+import bridePortraitAsset from "@/assets/bride-portrait.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 const ASSETS = "/assets";
@@ -246,6 +247,12 @@ function WeddingHero() {
 
           <div className="couple-details">
             <article className="couple-person couple-person--bride couple-reveal">
+              <img
+                className="couple-portrait"
+                src={bridePortraitAsset.url}
+                alt="Kunadruthi in a green silk saree with gold jewellery"
+                loading="lazy"
+              />
               <p className="couple-role">The Bride</p>
               <h3>Kunadruthi</h3>
               <p className="couple-profession">Software Engineer</p>
