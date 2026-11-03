@@ -198,17 +198,16 @@ button, input, textarea, select { font: inherit; }
 .couple-portrait {
   display: block;
   width: clamp(9.5rem, 26vw, 14rem);
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 3 / 4;
   margin: 0 auto 1.6rem;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center;
   border: 1px solid var(--gold);
   border-radius: 50% 50% .5rem .5rem / 32% 32% .5rem .5rem;
   padding: .4rem;
   background: linear-gradient(160deg, color-mix(in srgb, var(--parchment) 82%, white), var(--parchment));
   box-shadow: 0 1.2rem 2.4rem rgba(43, 26, 14, .18), 0 0 0 5px color-mix(in srgb, var(--gold) 28%, transparent);
 }
-.couple-portrait--groom { object-position: center; }
 .couple-role { margin: 0 0 .75rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--gold); letter-spacing: .28em; text-transform: uppercase; }
 .couple-person h3 { margin: 0 0 1.5rem; font: 400 clamp(2rem, 5vw, 3.35rem)/1.1 "Great Vibes", cursive; color: var(--maroon); letter-spacing: 0; }
 .couple-profession { margin: -0.75rem 0 1.4rem; font: 400 .68rem/1.5 Marcellus, serif; color: var(--ink); letter-spacing: .24em; text-indent: .24em; text-transform: uppercase; opacity: .8; }
