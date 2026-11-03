@@ -3,6 +3,7 @@ import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX,
 import { useEffect, useRef, useState } from "react";
 
 import bridePortraitAsset from "@/assets/bride-portrait.webp.asset.json";
+import groomPortraitAsset from "@/assets/groom-portrait.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 const ASSETS = "/assets";
@@ -267,6 +268,12 @@ function WeddingHero() {
             </div>
 
             <article className="couple-person couple-person--groom couple-reveal">
+              <img
+                className="couple-portrait couple-portrait--groom"
+                src={groomPortraitAsset.url}
+                alt="Surya Teja in a cream embroidered kurta"
+                loading="lazy"
+              />
               <p className="couple-role">The Groom</p>
               <h3>Surya Teja</h3>
               <p className="couple-profession">Software Engineer</p>
