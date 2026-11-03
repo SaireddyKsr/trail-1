@@ -245,12 +245,12 @@ function WeddingHero() {
           </header>
 
           <div className="couple-details">
-            <article className="couple-person couple-person--groom couple-reveal">
-              <p className="couple-role">The Groom</p>
-              <h3>Surya Teja</h3>
+            <article className="couple-person couple-person--bride couple-reveal">
+              <p className="couple-role">The Bride</p>
+              <h3>Kunadruthi</h3>
               <p className="couple-profession">Software Engineer</p>
-              <span className="couple-relation">Son of</span>
-              <p className="couple-parents">Smt. Gadugu Rajani Kumari <span>&</span> Late Sri. Gadugu Nagendra Prasad</p>
+              <span className="couple-relation">Daughter of</span>
+              <p className="couple-parents">Smt. Nanubala Leela Vathi <span>&</span> Sri. Nanubala Guru Sekhar</p>
             </article>
 
             <div className="couple-union couple-reveal" aria-hidden="true">
@@ -259,12 +259,12 @@ function WeddingHero() {
               <span className="couple-union-line" />
             </div>
 
-            <article className="couple-person couple-person--bride couple-reveal">
-              <p className="couple-role">The Bride</p>
-              <h3>Kunadruthi</h3>
+            <article className="couple-person couple-person--groom couple-reveal">
+              <p className="couple-role">The Groom</p>
+              <h3>Surya Teja</h3>
               <p className="couple-profession">Software Engineer</p>
-              <span className="couple-relation">Daughter of</span>
-              <p className="couple-parents">Smt. Nanubala Leela Vathi <span>&</span> Sri. Nanubala Guru Sekhar</p>
+              <span className="couple-relation">Son of</span>
+              <p className="couple-parents">Smt. Gadugu Rajani Kumari <span>&</span> Late Sri. Gadugu Nagendra Prasad</p>
             </article>
           </div>
 
