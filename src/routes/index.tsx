@@ -255,7 +255,7 @@ function WeddingHero() {
             <article className="couple-person couple-person--bride couple-reveal">
               <img
                 className="couple-portrait"
-                src={bridePortraitAsset.url}
+                src={bridePortraitUrl}
                 alt="Kunadruthi in a green silk saree with gold jewellery"
                 loading="lazy"
               />
@@ -275,7 +275,7 @@ function WeddingHero() {
             <article className="couple-person couple-person--groom couple-reveal">
               <img
                 className="couple-portrait couple-portrait--groom"
-                src={groomPortraitAsset.url}
+                src={groomPortraitUrl}
                 alt="Surya Teja in a cream embroidered kurta"
                 loading="lazy"
               />
