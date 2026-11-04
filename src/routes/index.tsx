@@ -342,6 +342,59 @@ function WeddingHero() {
   );
 }
 
+      <CountdownSection />
+      <AuspiciousHourSection />
+      <VenueSection />
+      <InvitationFooter />
+      <BrandingSection />
+
+function GallerySection() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.12 },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      className={`gallery-section ${isVisible ? "gallery-section--visible" : ""}`}
+      aria-labelledby="gallery-title"
+    >
+      <header className="gallery-heading gallery-reveal">
+        <span className="couple-flourish" aria-hidden="true">◆</span>
+        <h2 id="gallery-title">Our Moments</h2>
+        <p>Stealing smiles, sharing joy — a glimpse of us together.</p>
+      </header>
+      <div className="gallery-track" role="list">
+        {coupleMomentsUrls.map((photoUrl, index) => (
+          <figure
+            className="gallery-item gallery-reveal"
+            role="listitem"
+            key={photoUrl}
+            style={{ animationDelay: `${index * 0.16}s` }}
+          >
+            <img src={photoUrl} alt={`Kunadruthi and Surya Teja together, moment ${index + 1}`} loading="lazy" />
+          </figure>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function CountdownSection() {
   const { days, hours, minutes, seconds } = useCountdown();
   const cells = [
