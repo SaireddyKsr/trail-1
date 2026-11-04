@@ -295,6 +295,7 @@ function WeddingHero() {
         </div>
       </section>
 
+      <GallerySection />
       <CountdownSection />
       <AuspiciousHourSection />
       <VenueSection />
@@ -341,12 +342,6 @@ function WeddingHero() {
     </main>
   );
 }
-
-      <CountdownSection />
-      <AuspiciousHourSection />
-      <VenueSection />
-      <InvitationFooter />
-      <BrandingSection />
 
 function GallerySection() {
   const [isVisible, setIsVisible] = useState(false);
