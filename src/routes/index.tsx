@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-import bridePortraitAsset from "@/assets/bride-portrait-close.webp.asset.json";
-import groomPortraitAsset from "@/assets/groom-portrait-close.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 const ASSETS = "/assets";
@@ -21,6 +19,13 @@ const railRightUrl = `${ASSETS}/rail-right.png`;
 const railTopUrl = `${ASSETS}/rail-top.png`;
 const templeSceneryUrl = `${ASSETS}/temple-scenery.png`;
 const countdownWallUrl = `${ASSETS}/countdown-wall.webp`;
+const bridePortraitUrl = `${ASSETS}/bride-portrait-close.webp`;
+const groomPortraitUrl = `${ASSETS}/groom-portrait-close.webp`;
+const coupleMomentsUrls = [
+  `${ASSETS}/couple-moments-1.webp`,
+  `${ASSETS}/couple-moments-2.webp`,
+  `${ASSETS}/couple-moments-3.webp`,
+];
 const musicUrl = "/Kalyanam_Vibhogam.mp3";
 
 const WEDDING_DATE = new Date("2026-11-26T09:31:00+05:30");
