@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CalendarDays, Clock3, Instagram, MapPin, Music, Phone, Share2, VolumeX, Youtube } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-import bridePortraitAsset from "@/assets/bride-portrait-close.webp.asset.json";
-import groomPortraitAsset from "@/assets/groom-portrait-close.webp.asset.json";
 import { Button } from "@/components/ui/button";
 
 const ASSETS = "/assets";
@@ -21,6 +19,13 @@ const railRightUrl = `${ASSETS}/rail-right.png`;
 const railTopUrl = `${ASSETS}/rail-top.png`;
 const templeSceneryUrl = `${ASSETS}/temple-scenery.png`;
 const countdownWallUrl = `${ASSETS}/countdown-wall.webp`;
+const bridePortraitUrl = `${ASSETS}/bride-portrait-close.webp`;
+const groomPortraitUrl = `${ASSETS}/groom-portrait-close.webp`;
+const coupleMomentsUrls = [
+  `${ASSETS}/couple-moments-1.webp`,
+  `${ASSETS}/couple-moments-2.webp`,
+  `${ASSETS}/couple-moments-3.webp`,
+];
 const musicUrl = "/Kalyanam_Vibhogam.mp3";
 
 const WEDDING_DATE = new Date("2026-11-26T09:31:00+05:30");
@@ -250,7 +255,7 @@ function WeddingHero() {
             <article className="couple-person couple-person--bride couple-reveal">
               <img
                 className="couple-portrait"
-                src={bridePortraitAsset.url}
+                src={bridePortraitUrl}
                 alt="Kunadruthi in a green silk saree with gold jewellery"
                 loading="lazy"
               />
@@ -270,7 +275,7 @@ function WeddingHero() {
             <article className="couple-person couple-person--groom couple-reveal">
               <img
                 className="couple-portrait couple-portrait--groom"
-                src={groomPortraitAsset.url}
+                src={groomPortraitUrl}
                 alt="Surya Teja in a cream embroidered kurta"
                 loading="lazy"
               />
@@ -290,6 +295,7 @@ function WeddingHero() {
         </div>
       </section>
 
+      <GallerySection />
       <CountdownSection />
       <AuspiciousHourSection />
       <VenueSection />
@@ -334,6 +340,53 @@ function WeddingHero() {
         </div>
       )}
     </main>
+  );
+}
+
+function GallerySection() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.12 },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      ref={sectionRef}
+      className={`gallery-section ${isVisible ? "gallery-section--visible" : ""}`}
+      aria-labelledby="gallery-title"
+    >
+      <header className="gallery-heading gallery-reveal">
+        <span className="couple-flourish" aria-hidden="true">◆</span>
+        <h2 id="gallery-title">Our Moments</h2>
+        <p>Stealing smiles, sharing joy — a glimpse of us together.</p>
+      </header>
+      <div className="gallery-track" role="list">
+        {coupleMomentsUrls.map((photoUrl, index) => (
+          <figure
+            className="gallery-item gallery-reveal"
+            role="listitem"
+            key={photoUrl}
+            style={{ animationDelay: `${index * 0.16}s` }}
+          >
+            <img src={photoUrl} alt={`Kunadruthi and Surya Teja together, moment ${index + 1}`} loading="lazy" />
+          </figure>
+        ))}
+      </div>
+    </section>
   );
 }
 
